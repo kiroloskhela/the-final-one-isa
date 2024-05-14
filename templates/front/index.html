@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grad Project</title>
+    <link rel="stylesheet" href="../static/styles/styles_front.css">
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+ <div class="container" id="container">
+	<div class="form-container sign-up-container">
+
+		 <form action="{{ url_for('register') }}" method="post" autocomplete="off">
+			<h1 style="color: #1ed760;">Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f" style="color: #1ed760;"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g" style="color: #1ed760;"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in" style="color: #1ed760;"></i></a>
+			</div>
+			<span >or use your email for registration</span>
+			 <input type="text" name="username" placeholder="Username"  required style="outline: none;  background-color: #fff; color: #1ed760; border-radius: 10px; border: 2px solid #1ed760;">
+			<input type="password" name="password" placeholder="Password" required style=" outline: none;  background-color: #fff; color: #1ed760; border-radius: 10px; border: 2px solid #1ed760;">
+			<input type="email" name="email" placeholder="Email" id="email" required style=" outline: none;  background-color: #fff; color: #1ed760; border-radius: 10px; border: 2px solid #1ed760;">
+
+			 <div class="msg">{{ msg }}</div>
+
+
+
+
+			<button type="submit" >Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="{{ url_for('login') }}" method="post">
+			<h1 style="color: #1ed760;">Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social" ><i class="fab fa-facebook-f" style="color: #1ed760;" ></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g" style="color: #1ed760;"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in" style="color: #1ed760;"></i></a>
+			</div>
+			<span>or use your account</span>
+<!--			<input type="email" placeholder="Email" />-->
+<input type="text" name="username" placeholder="Username" id="username" required style="outline: none;  background-color: #fff; color: #1ed760; border-radius: 10px; border: 2px solid #1ed760;">
+<input type="password" name="password" placeholder="Password" id="password" required style=" outline: none;  background-color: #fff; color: #1ed760; border-radius: 10px; border: 2px solid #1ed760;">
+
+        <div class="msg">{{ msg }}</div>
+<!--        <input type="submit" value="Login">-->
+			<a href="#">Forgot your password?</a>
+<!--			<button type="submit" >Sign In</button>-->
+			   <button type="submit" class="bn54">
+                <span class="bn54span">Sign in</span>
+            </button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+<!--				<button class="ghost" id="signIn">Sign In</button>-->
+				<button type="submit" class="bn54" id="signIn" style=" background-color: #fff; ">
+                <span class="bn54span" style="color: #1ed760; ">Sign In</span>
+            </button>
+
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+
+<!--				<button class="ghost" id="signUp">Sign Up</button>-->
+
+			<button type="submit" class="bn54" id="signUp" style=" background-color: #fff; ">
+                <span class="bn54span" style="color: #1ed760; ">Sign up</span>
+            </button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+ 
+
+    <script src="../static/scripts/script_front.js"></script>
+</body>
+</html>

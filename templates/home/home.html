@@ -1,0 +1,103 @@
+{% extends 'home/layout.html' %}
+
+<!--{% block title %} {{ title }} {% endblock %}-->
+
+{% block content %}
+
+  <style>
+        h2 {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+
+<!--<h2 >Upload Audio</h2>-->
+
+<!--<div style="margin-top:40px; background-color: #000 ;  justify-content: center; align-items: center;">-->
+
+
+
+<!--<form action="/submit_audio" method="post" enctype="multipart/form-data" style=" background-color: #000; display: flex; justify-content: center; align-items: center; ">-->
+<!--    <div>-->
+<!--        <input type="file" name="audio_file" id="fileInput" accept=".wav" style="display: none;">-->
+<!--        <input type="checkbox" id="c">-->
+<!--        <label for="fileInput" id="upload_app">-->
+<!--            <div id="app">-->
+<!--                <div id="arrow"></div>-->
+<!--                <div id="success">-->
+<!--                    <i class="fas fa-check-circle"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </label>-->
+<!--    </div>-->
+
+<!--    <div style="margin-left:800px; ">-->
+<!--        <button type="submit">Submit</button>-->
+
+<!--    </div>-->
+<!--</form>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>-->
+<!--document.getElementById('fileInput').addEventListener('change', function() {-->
+<!--    var file = this.files[0];-->
+<!--    if (file) {-->
+<!--        // Check the checkbox-->
+<!--        document.getElementById('c').checked = true;-->
+
+<!--        // Start animation-->
+<!--        document.getElementById('app').classList.add('uploading');-->
+
+<!--        // Simulate upload completion after 3 seconds-->
+<!--        setTimeout(function() {-->
+<!--            // Stop animation (simulate upload completion)-->
+<!--            document.getElementById('app').classList.remove('uploading');-->
+<!--            // Show success icon-->
+<!--            document.getElementById('success').style.display = 'block';-->
+<!--        }, 3000);-->
+<!--    }-->
+<!--});-->
+
+
+<!--</script>-->
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!--<h2   >Audio</h2>-->
+<!-- <p style="background: #000; color: #fff border: 2px solid #fff; ">{{ AUDIO }}</p>-->
+<!-- <h2   >Text</h2>-->
+<!-- <p style="background: #000; color: #fff border: 2px solid #fff">{{ TEXT }}</p>-->
+
+<!--<script>-->
+<!--    // Hide the default file input and use buttons to trigger its click event-->
+<!--    document.getElementById('upload_app_button').addEventListener('click', function() {-->
+<!--        document.getElementById('file_input').click();-->
+<!--    });-->
+<!--</script>-->
+
+{% endblock %}

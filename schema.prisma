@@ -1,0 +1,23 @@
+generator client {
+  provider                    = "prisma-client-py"
+  enable_experimental_decimal = "true"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://graddb_owner:cQML2kX1DGoe@ep-lively-tree-a5bi1aby.us-east-2.aws.neon.tech/graddb?sslmode=require"
+}
+
+model Account {
+  id       Int    @id @default(autoincrement())
+  username String
+  password String
+  email    String
+}
+
+model kiro {
+  id       Int    @id @default(autoincrement())
+  username String @db.VarChar(255)
+  email    String @db.VarChar(255)
+  password String @db.VarChar(255)
+}
